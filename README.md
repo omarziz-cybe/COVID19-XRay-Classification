@@ -1,23 +1,33 @@
-# COVID-19 vs Normal Chest X-Ray Classification 🫁🩺
+# 🫁 COVID-19 & Pneumonia Chest X-Ray Classification
 
-## 📌 Project Overview
-A Machine Learning / Deep Learning model designed to automatically classify chest X-ray (or CT scan) images into two distinct categories: **COVID-19 Positive** and **Normal**. 
+An end-to-end Deep Learning pipeline built using PyTorch/TensorFlow to classify Chest X-Ray radiographs into COVID-19, Normal, and Viral Pneumonia cases with high sensitivity and precision.
 
-This project demonstrates the practical application of Artificial Intelligence in the healthcare sector, specifically focusing on medical image analysis, data preprocessing, and binary classification using neural networks.
+---
 
-## 🚀 Features
-- **Binary Classification:** Accurately distinguishes between healthy lungs and those infected with COVID-19.
-- **Robust Data Preprocessing:** Includes image resizing, pixel normalization, and data augmentation to handle variations in medical scans and prevent model overfitting.
-- **Performance Metrics:** Evaluated using industry-standard metrics such as Accuracy, Precision, Recall, and Confusion Matrix to ensure medical reliability.
+## 📌 Overview
+Early screening of COVID-19 and viral infections from medical imaging assists healthcare providers in rapid triage. This project implements Convolutional Neural Networks (CNNs) trained on chest radiography datasets, utilizing transfer learning, data augmentation, and regularization to achieve robust clinical diagnostic performance.
 
-## 🛠️ Technologies & Libraries Used
-- **Programming Language:** Python 3.x
-- **Deep Learning / ML Framework:** [TensorFlow / Keras / PyTorch / Scikit-Learn - اختار اللي استخدمته]
-- **Image Processing:** OpenCV / PIL
-- **Data Manipulation:** NumPy, Pandas
-- **Visualization:** Matplotlib / Seaborn (for plotting loss/accuracy curves and confusion matrix)
+---
 
-## ⚙️ How to Run the Project
-1. Clone the repository to your local machine:
-   ```bash
-   git clone [https://github.com/omarziz-cybe/COVID19-XRay-Classification.git](https://github.com/omarziz-cybe/COVID19-XRay-Classification.git)
+## 🛠️ Tech Stack
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+
+---
+
+## ⚙️ Pipeline Highlights
+- **Image Preprocessing**: CLAHE contrast enhancement, normalization, and resizing.
+- **Data Augmentation**: Rotation, zooming, and horizontal flipping to prevent overfitting.
+- **Architectures Evaluated**: Custom CNN architecture vs. Transfer Learning backbones.
+- **Evaluation**: Confusion Matrix, ROC-AUC Curves, Precision, Recall, and F1-Score.
+
+---
+
+## 🚀 Quick Start
+```bash
+git clone [https://github.com/omarziz-cybe/COVID19-XRay-Classification.git](https://github.com/omarziz-cybe/COVID19-XRay-Classification.git)
+cd COVID19-XRay-Classification
+pip install -r requirements.txt
+jupyter notebook
